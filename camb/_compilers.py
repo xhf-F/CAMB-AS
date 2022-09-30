@@ -27,9 +27,9 @@ def get_ifort_version():
 
 #VM BEGINS
 def get_gfortran_version():
-    ver = call_command("$FORTRAN_COMPILER -dumpversion")
+    ver = call_command("gfortran -dumpversion")
     if ver and '.' not in ver:
-        ver = call_command("$FORTRAN_COMPILER -dumpfullversion")
+        ver = call_command("gfortran -dumpfullversion")
     return ver
 #VM ENDS
 
