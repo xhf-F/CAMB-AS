@@ -126,6 +126,11 @@
             dgpie = 0
         end if
         
+        !Xiao
+        if (this%astress_model.eq.2) then
+            dgpie = this%astress_p2
+
+
     end if
     end subroutine TDarkEnergyFluid_PerturbedStressEnergy
 
