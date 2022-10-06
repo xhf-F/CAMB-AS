@@ -123,8 +123,8 @@
         if(this%astress_model .eq. 1 )then
             dgpie = this%astress_p1 * dgrho * a**(-1.5*w) !Model 1 of 1402.5993, at this time dgrho is just matter
         !Xiao add Model 2 of 1402.5993, 
-        else if (this%astress_model.eq.2) then
-                dgpie = this%astress_p2 * dgrhoe/ (1 + (astress_p3 * a * adotoa / k)**2)
+        else if (this%astress_model .eq. 2) then
+                dgpie = this%astress_p2 * dgrhoe/ (1 + (this%astress_p3 * a * adotoa / k)**2)
         else
             dgpie = 0
         end if
