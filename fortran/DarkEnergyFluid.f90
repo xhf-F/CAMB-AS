@@ -129,6 +129,12 @@
             dgpie = 0
         end if
 
+!KZ's comment:
+!dgrhoe is in synchronous gauge 
+!need to transfer it to the comoving gauge of dark energy fluid 
+!Basically need the "v" that transform it, and use the general gauge transform equation.
+!can try to read something from the reference,
+
 
     end if
     end subroutine TDarkEnergyFluid_PerturbedStressEnergy
